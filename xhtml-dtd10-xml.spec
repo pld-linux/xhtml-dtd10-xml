@@ -52,31 +52,31 @@ xmlcatalog --noout --create $RPM_BUILD_ROOT/%{catalog}
 xmlcatalog --noout --add rewriteSystem \
 	'http://www.w3.org/TR/xhtml1/DTD/' \
 	'/usr/share/sgml/html/xml-dtd-%{v_er}/' \
-	$RPM_BUILD_ROOT/%{catalog}
+	$RPM_BUILD_ROOT%{catalog}
 xmlcatalog --noout -add public \
 	"-//W3C//DTD XHTML 1.0 Strict//EN" \
 	xhtml1-strict.dtd \
-	$RPM_BUILD_ROOT/%{catalog}
+	$RPM_BUILD_ROOT%{catalog}
 xmlcatalog --noout -add public \
 	"-//W3C//DTD XHTML 1.0 Transitional//EN" \
 	xhtml1-transitional.dtd \
-	$RPM_BUILD_ROOT/%{catalog}
+	$RPM_BUILD_ROOT%{catalog}
 xmlcatalog --noout -add public \
 	"-//W3C//DTD XHTML 1.0 Frameset//EN" \
 	xhtml1-frameset.dtd \
-	$RPM_BUILD_ROOT/%{catalog}
+	$RPM_BUILD_ROOT%{catalog}
 xmlcatalog --noout -add public \
-	"-//W3C//ENTITIES Latin 1 for XHTML//EN"  \
+	"-//W3C//ENTITIES Latin 1 for XHTML//EN" \
 	"xhtml-lat1.ent" \
-	$RPM_BUILD_ROOT/%{catalog}
+	$RPM_BUILD_ROOT%{catalog}
 xmlcatalog --noout -add public \
 	"-//W3C//ENTITIES Symbols for XHTML//EN" \
 	"xhtml-symbol.ent" \
-	$RPM_BUILD_ROOT/%{catalog}
+	$RPM_BUILD_ROOT%{catalog}
 xmlcatalog --noout -add public \
 	"-//W3C//ENTITIES Special for XHTML//EN" \
 	"xhtml-special.ent" \
-	$RPM_BUILD_ROOT/%{catalog}
+	$RPM_BUILD_ROOT%{catalog}
 
 install DTD/* $RPM_BUILD_ROOT%{_datadir}/sgml/html/xml-dtd-%{v_er}
 
