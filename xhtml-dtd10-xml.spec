@@ -28,9 +28,9 @@ Requires(post):	sgml-common >= 0.5
 Requires(preun):/usr/bin/xmlcatalog
 Requires(preun):sgml-common >= 0.5
 Provides:	xhtml-dtd
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+AutoReqProv:	no
 BuildArch:	noarch
-AutoReqProv:	0
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		catalog		%{_datadir}/sgml/html/xml-dtd-%{v_er}/xmlcatalog-%{v_er}-%{version}-%{release}
 
