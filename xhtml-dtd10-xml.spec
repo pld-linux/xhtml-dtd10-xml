@@ -48,7 +48,7 @@ kodu XHTML).
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_datadir}/sgml/html/xml-dtd-%{v_er}
 
-xmlcatalog --noout --create $RPM_BUILD_ROOT/%{catalog}
+xmlcatalog --noout --create $RPM_BUILD_ROOT%{catalog}
 xmlcatalog --noout --add rewriteSystem \
 	'http://www.w3.org/TR/xhtml1/DTD/' \
 	'/usr/share/sgml/html/xml-dtd-%{v_er}/' \
