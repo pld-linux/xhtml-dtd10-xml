@@ -14,14 +14,14 @@ Summary:	XHTML %{v_er}
 Summary(pl):	XHTML %{v_er}
 Name:		xhtml-dtd%{ver}-xml
 Version:	%{year}%{month}%{day}
-Release:	1
+Release:	2
 Group:		Applications/Publishing/SGML
 License:	W3C
 Vendor:		W3C
 Source0:	http://www.w3.org/TR/%{year}/%{type}-xhtml%{mver}-%{version}/xhtml%{mver}.tgz
 # Source0-md5:	a9ab373670f55fd50ce1e6c75261b75d
 URL:		http://www.w3.org/TR/xhtml%{mver}/
-Requires:	sgml-common >= 0.5
+Requires:	sgml-common >= 0.6.3-5
 Requires:	sgmlparser
 Requires(post):	/usr/bin/xmlcatalog
 Requires(post):	sgml-common >= 0.5
@@ -80,7 +80,7 @@ xmlcatalog --noout -add public \
 
 install DTD/* $RPM_BUILD_ROOT%{_datadir}/sgml/html/xml-dtd-%{v_er}
 
-# make symlink for minimizing file dupication and make documentation working
+# make symlink for minimizing file duplication and make documentation working
 rm -rf DTD
 ln -s ../../sgml/html/xml-dtd-%{v_er}/ DTD
 
