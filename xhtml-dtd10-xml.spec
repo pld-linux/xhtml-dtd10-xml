@@ -77,7 +77,7 @@ xmlcatalog --noout -add public \
 	"-//W3C//ENTITIES Special for XHTML//EN" \
 	"xhtml-special.ent" \
 	$RPM_BUILD_ROOT/%{catalog}
- 
+
 install DTD/* $RPM_BUILD_ROOT%{_datadir}/sgml/html/xml-dtd-%{v_er}
 
 # make symlink for minimizing file dupication and make documentation working
