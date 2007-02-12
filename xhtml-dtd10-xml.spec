@@ -11,7 +11,7 @@
 %define		v_er	%{major}.%{minor}%{micro}
 %define		v__er	%{major}\.%{minor}%{micro}
 Summary:	XHTML %{v_er}
-Summary(pl.UTF-8):   XHTML %{v_er}
+Summary(pl.UTF-8):	XHTML %{v_er}
 Name:		xhtml-dtd%{ver}-xml
 Version:	%{year}%{month}%{day}
 Release:	2
