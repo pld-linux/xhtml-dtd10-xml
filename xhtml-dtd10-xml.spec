@@ -11,7 +11,7 @@
 %define		v_er	%{major}.%{minor}%{micro}
 %define		v__er	%{major}\.%{minor}%{micro}
 Summary:	XHTML %{v_er}
-Summary(pl):	XHTML %{v_er}
+Summary(pl.UTF-8):   XHTML %{v_er}
 Name:		xhtml-dtd%{ver}-xml
 Version:	%{year}%{month}%{day}
 Release:	2
@@ -37,8 +37,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 XHTML specification (with DTD, needed to parse XHTML code).
 
-%description -l pl
-Specyfikacja XHTML (wraz z DTD, potrzebnym do sprawdzania poprawno∂ci
+%description -l pl.UTF-8
+Specyfikacja XHTML (wraz z DTD, potrzebnym do sprawdzania poprawno≈õci
 kodu XHTML).
 
 %prep
