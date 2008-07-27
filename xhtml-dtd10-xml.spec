@@ -14,7 +14,7 @@ Summary:	XHTML %{v_er}
 Summary(pl.UTF-8):	XHTML %{v_er}
 Name:		xhtml-dtd%{ver}-xml
 Version:	%{year}%{month}%{day}
-Release:	2
+Release:	3
 Group:		Applications/Publishing/SGML
 License:	W3C
 Vendor:		W3C
