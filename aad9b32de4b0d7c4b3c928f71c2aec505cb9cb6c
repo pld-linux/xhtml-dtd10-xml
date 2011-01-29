@@ -1,0 +1,4 @@
+- fixed usage of macros
+- added/removed neccesary/obsolete patches
+- FHS 2.0 compliance where needed
+- gzipping docs where needed
