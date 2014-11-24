@@ -15,19 +15,18 @@ Summary(pl.UTF-8):	XHTML %{v_er}
 Name:		xhtml-dtd%{ver}-xml
 Version:	%{year}%{month}%{day}
 Release:	3
-Group:		Applications/Publishing/SGML
 License:	W3C
-Vendor:		W3C
+Group:		Applications/Publishing/SGML
 Source0:	http://www.w3.org/TR/%{year}/%{type}-xhtml%{mver}-%{version}/xhtml%{mver}.tgz
 # Source0-md5:	a9ab373670f55fd50ce1e6c75261b75d
-URL:		http://www.w3.org/TR/xhtml%{mver}/
+URL:		http://www.w3.org/TR/xhtml1/
 BuildRequires:	libxml2-progs
 Requires:	sgml-common >= 0.6.3-5
 Requires:	sgmlparser
 Requires(post):	/usr/bin/xmlcatalog
 Requires(post):	sgml-common >= 0.5
-Requires(preun):/usr/bin/xmlcatalog
-Requires(preun):sgml-common >= 0.5
+Requires(preun):	/usr/bin/xmlcatalog
+Requires(preun):	sgml-common >= 0.5
 Provides:	xhtml-dtd
 AutoReqProv:	no
 BuildArch:	noarch
